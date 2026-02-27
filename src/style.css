@@ -1,5 +1,33 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: lightblue;
+}
+
+.card-poker {
+  width: 240px;
+  height: 360px;
+  position: center;
+  border-radius: 15px;
+  background: #fff;
+  font-family: 'Georgia', serif;
+}
+
+/* El "3" central ya está ubicado por las clases d-flex de Bootstrap */
+
+.suit-top, .suit-bottom {
+  position: absolute;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.suit-top {
+  top: 10px;
+  left: 15px;
+}
+
+.suit-bottom {
+  bottom: 10px;
+  right: 15px;
+  transform: rotate(180deg);
 }
